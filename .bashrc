@@ -128,6 +128,8 @@ eval "$(starship init bash)"
 . "$HOME/.atuin/bin/env"
 
 export PATH="$PATH:/home/elias/Android/flutter/bin"
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
